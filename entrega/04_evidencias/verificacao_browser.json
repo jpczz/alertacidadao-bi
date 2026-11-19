@@ -1,0 +1,77 @@
+{
+  "method": "Actual browser renders application HTML/CSS/JS in memory; explicit local httpx bridge exercises running FastAPI. Browser navigation is disabled by environment policy; no policy changes were made. Not a public deployment test.",
+  "viewport_desktop": [
+    1440,
+    960
+  ],
+  "viewport_mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    {
+      "case": "PDF fields extracted in browser",
+      "result": "passed"
+    },
+    {
+      "case": "Rain TESTE-A excludes TESTE-B",
+      "result": "passed",
+      "locations": 2,
+      "notifications": 1
+    },
+    {
+      "case": "Reading updates dashboard",
+      "result": "passed",
+      "confirmed": 1,
+      "confirmation_rate": 100.0
+    },
+    {
+      "case": "Repeat does not duplicate",
+      "result": "passed"
+    },
+    {
+      "case": "Outside TESTE-C creates zero notifications",
+      "result": "passed"
+    },
+    {
+      "case": "Image OCR through browser upload",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: cadastro",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: meus-locais",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: notificacoes",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: institucional",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: laboratorio",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: sobre",
+      "result": "passed"
+    },
+    {
+      "case": "Mobile no horizontal overflow: inicio",
+      "result": "passed"
+    },
+    {
+      "case": "Details dialog closes via Escape",
+      "result": "passed"
+    }
+  ],
+  "javascript_errors": [],
+  "recording_duration_seconds": 90.01,
+  "frames": 188,
+  "human_participants": 0
+}

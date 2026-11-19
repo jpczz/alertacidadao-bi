@@ -4,7 +4,10 @@ MVP acadêmico de Business Intelligence & Startup Development, FIAP CitizenTech 
 
 - Aplicação: https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site
 - Materiais de avaliação: https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/entrega
-- Gerador do PDF após o vídeo: https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/finalizar
+- Vídeo final: https://youtu.be/RtqAPawx7h4
+- PDF de entrega: [Dossie_AlertaCidadao_Para_Submissao.pdf](../docs/Dossie_AlertaCidadao_Para_Submissao.pdf)
+- Materiais versionados: [entrega/](../entrega/)
+- Utilitário de atualização do link de vídeo: https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/finalizar
 - Teleprompter da equipe: https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/gravacao
 - Código das duas implementações: https://github.com/jpczz/alertacidadao-bi
 
@@ -25,13 +28,15 @@ npm run build
 npm run validate
 ```
 
-O build empacota os arquivos de public/ e gera dist/server/index.js. Os PDFs da entrega são distribuídos pela central pública e pelo pacote de materiais, sem cópia neste repositório. Para reproduzir também as páginas documentais e o gerador de PDF em outra hospedagem, acrescente os arquivos indicados em public/docs/README.md antes do build. A aplicação central e os testes de domínio não dependem desses PDFs de apresentação. Os arquivos gerados não são a fonte de edição. Os 12 testes de tests/worker-api.test.mjs chamam os handlers reais e usam SQLite por um adaptador da interface D1. São testes locais; não equivalem à verificação HTTP da implantação pública.
+O build empacota os arquivos de public/ e gera dist/server/index.js. Os PDFs da entrega estão versionados em ../entrega/; o dossiê para submissão também está em ../docs/. Os recursos usados pelas páginas documentais e pelo gerador estão indicados em public/docs/README.md. Preserve o template original e seu mapa de coordenadas ao reproduzir o build. A aplicação central e os testes de domínio não dependem desses PDFs de apresentação. Os arquivos gerados não são a fonte de edição. Os 12 testes de tests/worker-api.test.mjs chamam os handlers reais e usam SQLite por um adaptador da interface D1. São testes locais; não equivalem à verificação HTTP da implantação pública.
 
 No repositório principal, scripts/verificar_site_publico.py executa uma jornada HTTP pública com duas sessões sintéticas próprias. O relatório em evidencias/site_publico_verificado.json registra expectativas, resultados e métricas, sem cookies ou tokens. O script não acessa dados de outras sessões nem envia mensagens externas.
 
 ## Conteúdo para gravação e avaliação
 
-public/gravacao.html e public/static/teleprompter.js oferecem seis trechos, cinco integrantes e 4min55s planejados. O pitch final depende da gravação da equipe; esta demonstração não substitui a participação dos alunos. public/entrega.html reúne dossiê, apresentação e ensaio documentado.
+O vídeo final fornecido pela equipe está em https://youtu.be/RtqAPawx7h4. O arquivo anexado tem 248,87 segundos, aproximadamente 4min09s. public/pitch.html aponta para a gravação e public/entrega.html reúne dossiê, apresentação e ensaio documentado. O último slide do vídeo preserva texto da preparação; os links desta entrega refletem o estado final publicado.
+
+public/gravacao.html e public/static/teleprompter.js preservam o roteiro original com seis trechos, cinco integrantes e 4min55s planejados, como material de apoio. O tempo planejado do roteiro é diferente da duração medida da gravação final.
 
 ## Finalização do PDF
 

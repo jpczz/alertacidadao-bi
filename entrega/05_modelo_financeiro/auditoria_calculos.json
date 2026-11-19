@@ -1,0 +1,32 @@
+{
+  "assumptions_not_quotes": true,
+  "scenarios": [
+    {
+      "cost_per_message": 0.08,
+      "variable_per_client": 360.0,
+      "assumed_tax_per_client": 59.4,
+      "contribution": 570.6,
+      "contribution_margin": 0.5763636363636364,
+      "breakeven_clients": 32,
+      "result_at_50_clients": 10530.0
+    },
+    {
+      "cost_per_message": 0.15,
+      "variable_per_client": 500.0,
+      "assumed_tax_per_client": 59.4,
+      "contribution": 430.6,
+      "contribution_margin": 0.434949494949495,
+      "breakeven_clients": 42,
+      "result_at_50_clients": 3530.0
+    },
+    {
+      "cost_per_message": 0.3,
+      "variable_per_client": 800.0,
+      "assumed_tax_per_client": 59.4,
+      "contribution": 130.6,
+      "contribution_margin": 0.1319191919191919,
+      "breakeven_clients": 138,
+      "result_at_50_clients": -11470.0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+AlertaCidadão — verificação HTTP pública
+URL: https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site
+Início UTC: 2026-11-19T20:58:06.049443+00:00
+Fim UTC: 2026-11-19T21:01:05.424738+00:00
+Resultado: 36/36 verificações aprovadas
+Sessões próprias de teste; documentos sintéticos; nenhuma autenticação ou token de bypass.
+Cookies e CSRF mantidos somente em memória e omitidos das evidências.
+Este teste não comprova usabilidade humana, entrega externa ou redução de danos.
+
+PASS public_home_without_login
+PASS live_database_health
+PASS anonymous_state_rejected
+PASS session_created_with_cookie_and_csrf
+PASS session_cookie_security_flags
+PASS external_delivery_disabled
+PASS fresh_session_starts_empty
+PASS real_pdf_A_matches_ground_truth
+PASS pdf_A_requires_review_without_storage
+PASS real_pdf_B_matches_ground_truth
+PASS pdf_B_requires_review_without_storage
+PASS real_pdf_C_matches_ground_truth
+PASS pdf_C_requires_review_without_storage
+PASS invalid_csrf_rejected
+PASS foreign_origin_rejected
+PASS rejected_writes_leave_no_place
+PASS synthetic_place_A_saved
+PASS synthetic_place_B_saved
+PASS two_places_persisted
+PASS rain_creates_only_one_notification
+PASS place_B_excluded_by_region
+PASS notification_targets_place_A
+PASS before_reading_counter
+PASS reading_confirmation_saved
+PASS after_reading_counter_and_rate
+PASS repeat_confirmation_is_idempotent
+PASS rain_reprocessing_is_idempotent
+PASS region_C_excludes_A_and_B
+PASS single_notification_preserved
+PASS new_http_client_same_cookie_preserves_state
+PASS other_visitor_starts_isolated
+PASS other_visitor_cannot_confirm_our_notification
+PASS json_export_matches_session
+PASS json_export_has_no_session_secrets
+PASS csv_export_contains_real_notification
+PASS only_internal_channels_and_no_external_deliveries
+
+Limpeza das sessões próprias: [{"test_session": 1, "success": true}, {"test_session": 2, "success": true}]

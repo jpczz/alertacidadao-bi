@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-11-19T20:28:43.037779+00:00",
+  "url": "http://127.0.0.1:8766",
+  "method": "HTTP API with fresh synthetic session; automated technical test, not a user interview",
+  "data": "Two fictional places TESTE-A and TESTE-B, one rainfall notice for TESTE-A and one out-of-area notice for TESTE-C",
+  "checks": [
+    {
+      "check": "two_synthetic_places",
+      "expected": 2,
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "check": "rain_A_delivered_only_to_A",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "B_excluded_by_area",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "before_read_confirmation",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "after_read_confirmation",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "confirmation_ratio",
+      "expected": 100.0,
+      "observed": 100.0,
+      "passed": true
+    },
+    {
+      "check": "repeat_does_not_create_notification",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "notice_for_C_excludes_A_and_B",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "notification_total_remains_one",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "external_message_deliveries",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "isolated_session_stays_empty",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "export_matches_real_session",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    }
+  ],
+  "before": {
+    "places": 2,
+    "notices": 1,
+    "active_notices": 1,
+    "notifications": 1,
+    "confirmed": 0,
+    "unread": 1,
+    "confirmation_rate": 0.0,
+    "external_deliveries": 0
+  },
+  "after": {
+    "places": 2,
+    "notices": 1,
+    "active_notices": 1,
+    "notifications": 1,
+    "confirmed": 1,
+    "unread": 0,
+    "confirmation_rate": 100.0,
+    "external_deliveries": 0
+  },
+  "final_metrics": {
+    "places": 2,
+    "notices": 2,
+    "active_notices": 2,
+    "notifications": 1,
+    "confirmed": 1,
+    "unread": 0,
+    "confirmation_rate": 100.0,
+    "external_deliveries": 0
+  },
+  "functional_benefit_evidenced": "The engine excluded the nonmatching place, created one internal notification, recorded one acknowledgement and avoided reprocessing duplicates. No inference about comprehension, risk reduction, real delivery or willingness to pay.",
+  "human_participants": 0,
+  "external_messages_sent": 0
+}

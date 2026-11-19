@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "passed": 61,
+  "failed": 0,
+  "skipped": 0,
+  "by_module": {
+    "tests.test_api": 36,
+    "tests.test_documents": 7,
+    "tests.test_domain": 12,
+    "tests.test_messaging": 6
+  },
+  "external_messages_sent": 0,
+  "human_research_sessions": 0
+}

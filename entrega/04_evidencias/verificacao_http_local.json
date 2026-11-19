@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-11-17T15:58:11.416679+00:00",
+  "url": "http://127.0.0.1:8765",
+  "mode": "local_only",
+  "checks": [
+    {
+      "check": "health",
+      "passed": true
+    },
+    {
+      "check": "place_created",
+      "passed": true
+    },
+    {
+      "check": "notification_created",
+      "passed": true
+    },
+    {
+      "check": "reading_persisted",
+      "passed": true
+    },
+    {
+      "check": "repeat_does_not_duplicate",
+      "passed": true
+    },
+    {
+      "check": "unauthenticated_isolation",
+      "passed": true
+    }
+  ],
+  "error": null,
+  "not_verified": [
+    "visual browser",
+    "video public access",
+    "all members participation",
+    "restart persistence",
+    "provider message delivery"
+  ]
+}

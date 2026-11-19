@@ -1,0 +1,52 @@
+{
+  "project": "AlertaCidadão",
+  "youtube_url": "https://youtu.be/RtqAPawx7h4",
+  "youtube_access_check": "inconclusivo: consulta web e oEmbed bloquearam fetch (DisabledError); não implica vídeo privado",
+  "original": {
+    "name": "Video Project 4.mp4",
+    "bytes": 47898655,
+    "duration_seconds": 248.866667,
+    "video": "H.264 1920x1080 30fps",
+    "audio": "AAC stereo 48000Hz 192k",
+    "sha256": "1cc3fcde3a1788a31a61701d24ab3ddb8b4a8fa8ca1a2a89a4e91ead77ecf243",
+    "full_decode": "passed"
+  },
+  "github_backup": {
+    "name": "AlertaCidadao_Pitch_Final.mp4",
+    "bytes": 5987654,
+    "duration_seconds": 248.874,
+    "video_duration_seconds": 248.866667,
+    "video": "H.264 1920x1080 30fps",
+    "audio": "AAC stereo 48000Hz 96k",
+    "sha256": "ff8ed12b1fa34f8a09fd889bc6a65ed3671931fe2bb7c6ee2070ec8bf24218d1",
+    "content": "Mesmo conteúdo do original, sem cortes, com compressão para cópia de segurança; variação de 0.0073s decorre do contêiner AAC",
+    "full_decode": "passed"
+  },
+  "visual_review": {
+    "sample_times_seconds": [
+      5,
+      40,
+      80,
+      120,
+      160,
+      200,
+      240
+    ],
+    "finding": "Slides legíveis nos pontos amostrados; rostos não aparecem nas amostras. Participação individual por voz não foi confirmada.",
+    "stale_text": "No slide em torno de 240s consta: Publicação, entrevistas, canal externo e pitch da equipe continuam pendentes."
+  },
+  "duration_limit": {
+    "max_seconds": 300,
+    "passed": true,
+    "margin_seconds": 51.133333
+  },
+  "audio_signal": {
+    "mean_dbfs": -28.4,
+    "peak_dbfs": -3.4
+  },
+  "github_limits_source": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+  "github_limits": {
+    "browser_per_file_mib": 25,
+    "regular_git_per_file_mib": 100
+  }
+}

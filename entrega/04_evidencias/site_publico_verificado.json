@@ -1,0 +1,450 @@
+{
+  "checked_at": "2026-11-19T20:58:06.049443+00:00",
+  "url": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site",
+  "method": "Real HTTP requests to the public deployment, Python standard library, fresh cookie sessions; no authentication or bypass token.",
+  "scope": "Synthetic demonstration only; public HTTP/API verification, not a human usability interview, load test or real emergency notification.",
+  "human_participants": 0,
+  "external_messages_requested": 0,
+  "checks": [
+    {
+      "check": "public_home_without_login",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "live_database_health",
+      "expected": {
+        "status": "ok",
+        "mode": "synthetic-demo",
+        "storage": "cloudflare-d1"
+      },
+      "observed": {
+        "status": "ok",
+        "mode": "synthetic-demo",
+        "storage": "cloudflare-d1"
+      },
+      "passed": true
+    },
+    {
+      "check": "anonymous_state_rejected",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "check": "session_created_with_cookie_and_csrf",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "session_cookie_security_flags",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "external_delivery_disabled",
+      "expected": false,
+      "observed": false,
+      "passed": true
+    },
+    {
+      "check": "fresh_session_starts_empty",
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "observed": [
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "check": "real_pdf_A_matches_ground_truth",
+      "expected": {
+        "label": "MINHA CASA DE TESTE A",
+        "street": "RUA EXEMPLO A",
+        "number": "120",
+        "neighborhood": "JARDIM EXEMPLO A",
+        "city": "CIDADE EXEMPLO",
+        "state": "SP",
+        "postal_code": "00000-001",
+        "zone": "TESTE-A"
+      },
+      "observed": {
+        "label": "MINHA CASA DE TESTE A",
+        "street": "RUA EXEMPLO A",
+        "number": "120",
+        "neighborhood": "JARDIM EXEMPLO A",
+        "city": "CIDADE EXEMPLO",
+        "state": "SP",
+        "postal_code": "00000-001",
+        "zone": "TESTE-A"
+      },
+      "passed": true
+    },
+    {
+      "check": "pdf_A_requires_review_without_storage",
+      "expected": [
+        "texto_pdf",
+        true,
+        false,
+        []
+      ],
+      "observed": [
+        "texto_pdf",
+        true,
+        false,
+        []
+      ],
+      "passed": true
+    },
+    {
+      "check": "real_pdf_B_matches_ground_truth",
+      "expected": {
+        "label": "MINHA CASA DE TESTE B",
+        "street": "RUA EXEMPLO B",
+        "number": "120",
+        "neighborhood": "JARDIM EXEMPLO B",
+        "city": "CIDADE EXEMPLO",
+        "state": "SP",
+        "postal_code": "00000-002",
+        "zone": "TESTE-B"
+      },
+      "observed": {
+        "label": "MINHA CASA DE TESTE B",
+        "street": "RUA EXEMPLO B",
+        "number": "120",
+        "neighborhood": "JARDIM EXEMPLO B",
+        "city": "CIDADE EXEMPLO",
+        "state": "SP",
+        "postal_code": "00000-002",
+        "zone": "TESTE-B"
+      },
+      "passed": true
+    },
+    {
+      "check": "pdf_B_requires_review_without_storage",
+      "expected": [
+        "texto_pdf",
+        true,
+        false,
+        []
+      ],
+      "observed": [
+        "texto_pdf",
+        true,
+        false,
+        []
+      ],
+      "passed": true
+    },
+    {
+      "check": "real_pdf_C_matches_ground_truth",
+      "expected": {
+        "label": "MINHA CASA DE TESTE C",
+        "street": "RUA EXEMPLO C",
+        "number": "120",
+        "neighborhood": "JARDIM EXEMPLO C",
+        "city": "CIDADE EXEMPLO",
+        "state": "SP",
+        "postal_code": "00000-003",
+        "zone": "TESTE-C"
+      },
+      "observed": {
+        "label": "MINHA CASA DE TESTE C",
+        "street": "RUA EXEMPLO C",
+        "number": "120",
+        "neighborhood": "JARDIM EXEMPLO C",
+        "city": "CIDADE EXEMPLO",
+        "state": "SP",
+        "postal_code": "00000-003",
+        "zone": "TESTE-C"
+      },
+      "passed": true
+    },
+    {
+      "check": "pdf_C_requires_review_without_storage",
+      "expected": [
+        "texto_pdf",
+        true,
+        false,
+        []
+      ],
+      "observed": [
+        "texto_pdf",
+        true,
+        false,
+        []
+      ],
+      "passed": true
+    },
+    {
+      "check": "invalid_csrf_rejected",
+      "expected": 403,
+      "observed": 403,
+      "passed": true
+    },
+    {
+      "check": "foreign_origin_rejected",
+      "expected": 403,
+      "observed": 403,
+      "passed": true
+    },
+    {
+      "check": "rejected_writes_leave_no_place",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "synthetic_place_A_saved",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "synthetic_place_B_saved",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "two_places_persisted",
+      "expected": 2,
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "check": "rain_creates_only_one_notification",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "place_B_excluded_by_region",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "notification_targets_place_A",
+      "expected": [
+        "TESTE-A"
+      ],
+      "observed": [
+        "TESTE-A"
+      ],
+      "passed": true
+    },
+    {
+      "check": "before_reading_counter",
+      "expected": [
+        1,
+        0,
+        1
+      ],
+      "observed": [
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "check": "reading_confirmation_saved",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "after_reading_counter_and_rate",
+      "expected": [
+        1,
+        1,
+        0,
+        100
+      ],
+      "observed": [
+        1,
+        1,
+        0,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "check": "repeat_confirmation_is_idempotent",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "rain_reprocessing_is_idempotent",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "region_C_excludes_A_and_B",
+      "expected": [
+        0,
+        2
+      ],
+      "observed": [
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "check": "single_notification_preserved",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "new_http_client_same_cookie_preserves_state",
+      "expected": {
+        "places": 2,
+        "notices": 2,
+        "active_notices": 2,
+        "notifications": 1,
+        "confirmed": 1,
+        "unread": 0,
+        "confirmation_rate": 100,
+        "external_deliveries": 0
+      },
+      "observed": {
+        "places": 2,
+        "notices": 2,
+        "active_notices": 2,
+        "notifications": 1,
+        "confirmed": 1,
+        "unread": 0,
+        "confirmation_rate": 100,
+        "external_deliveries": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "other_visitor_starts_isolated",
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "observed": [
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "check": "other_visitor_cannot_confirm_our_notification",
+      "expected": 404,
+      "observed": 404,
+      "passed": true
+    },
+    {
+      "check": "json_export_matches_session",
+      "expected": {
+        "places": 2,
+        "notices": 2,
+        "active_notices": 2,
+        "notifications": 1,
+        "confirmed": 1,
+        "unread": 0,
+        "confirmation_rate": 100,
+        "external_deliveries": 0
+      },
+      "observed": {
+        "places": 2,
+        "notices": 2,
+        "active_notices": 2,
+        "notifications": 1,
+        "confirmed": 1,
+        "unread": 0,
+        "confirmation_rate": 100,
+        "external_deliveries": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "json_export_has_no_session_secrets",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "csv_export_contains_real_notification",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "only_internal_channels_and_no_external_deliveries",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    }
+  ],
+  "cleanup": [
+    {
+      "test_session": 1,
+      "success": true
+    },
+    {
+      "test_session": 2,
+      "success": true
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "version": "2.1.0",
+    "mode": "synthetic-demo",
+    "storage": "cloudflare-d1"
+  },
+  "before_confirmation": {
+    "places": 2,
+    "notices": 1,
+    "active_notices": 1,
+    "notifications": 1,
+    "confirmed": 0,
+    "unread": 1,
+    "confirmation_rate": 0,
+    "external_deliveries": 0
+  },
+  "after_confirmation": {
+    "places": 2,
+    "notices": 1,
+    "active_notices": 1,
+    "notifications": 1,
+    "confirmed": 1,
+    "unread": 0,
+    "confirmation_rate": 100,
+    "external_deliveries": 0
+  },
+  "final_metrics_before_cleanup": {
+    "places": 2,
+    "notices": 2,
+    "active_notices": 2,
+    "notifications": 1,
+    "confirmed": 1,
+    "unread": 0,
+    "confirmation_rate": 100,
+    "external_deliveries": 0
+  },
+  "external_messages_sent_as_reported_by_application": 0,
+  "completed_at": "2026-11-19T21:01:05.424738+00:00",
+  "total_checks": 36,
+  "passed_checks": 36,
+  "failed_checks": 0,
+  "success": true
+}

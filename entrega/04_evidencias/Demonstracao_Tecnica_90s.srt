@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:06,000
+AlertaCidadão | Demonstração acadêmica com dados sintéticos.
+
+2
+00:00:06,000 --> 00:00:18,000
+Cadastro assistido: extração real do texto do PDF e revisão dos campos.
+
+3
+00:00:18,000 --> 00:00:31,000
+Dois locais confirmados: TESTE-A e TESTE-B.
+
+4
+00:00:31,000 --> 00:00:38,000
+Chuva na área A: somente o local elegível recebe a comunicação.
+
+5
+00:00:38,000 --> 00:00:49,000
+A notificação informa abrangência, validade e origem do cenário.
+
+6
+00:00:49,000 --> 00:00:55,000
+O usuário confirma a leitura. A ação é persistida.
+
+7
+00:00:55,000 --> 00:01:04,000
+O painel atualiza: 1 leitura confirmada em 1 notificação interna.
+
+8
+00:01:04,000 --> 00:01:12,000
+Repetir a mesma versão não duplica a notificação.
+
+9
+00:01:12,000 --> 00:01:19,000
+Um aviso de TESTE-C não notifica os locais A ou B.
+
+10
+00:01:19,000 --> 00:01:29,880
+Fluxo real, cenários sintéticos. Sem alerta oficial ou envio externo.

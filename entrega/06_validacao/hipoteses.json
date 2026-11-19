@@ -1,0 +1,23 @@
+[
+  {
+    "id": "H1",
+    "hypothesis": "Compreensao da comunicacao pelo morador",
+    "state": "nao_testada_com_pessoas"
+  },
+  {
+    "id": "H2",
+    "hypothesis": "Dor operacional da organizacao",
+    "state": "nao_entrevistada"
+  },
+  {
+    "id": "H3",
+    "hypothesis": "Disposicao de pagamento",
+    "state": "nao_validada"
+  },
+  {
+    "id": "H4",
+    "hypothesis": "Elegibilidade, nao duplicidade e leitura",
+    "state": "verificada_no_conjunto_tecnico",
+    "limitations": "Dados sinteticos; nao prova previsao meteorologica nem utilidade humana."
+  }
+]

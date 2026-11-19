@@ -1,0 +1,219 @@
+[
+  {
+    "id": "01_problema",
+    "title": "Problema e cidadão",
+    "speaker": "Kaio Vinicius Meireles Alves",
+    "rm": "RM553282",
+    "start": 0,
+    "seconds": 45,
+    "slides": "1 e 2",
+    "role": "Apresentar a dor e o público",
+    "cues": [
+      {
+        "second": 0,
+        "label": "Slide 1 · abertura",
+        "text": "Um aviso de chuva chega. Ele vale para a região onde eu moro? Até quando? E como a organização sabe se o morador confirmou a leitura?"
+      },
+      {
+        "second": 14,
+        "label": "Slide 2 · problema",
+        "text": "Essa é a jornada que o AlertaCidadão quer melhorar. Já existem canais oficiais de alerta. Nossa proposta é complementar essa estrutura, conectando moradores e administradoras de conjuntos residenciais. Organizamos o caminho entre o local cadastrado, a informação pertinente e a confirmação de leitura. Nossa hipótese é que comunicar com contexto e acompanhar a resposta pode reduzir o trabalho manual da organização."
+      }
+    ],
+    "text": "Um aviso de chuva chega. Ele vale para a região onde eu moro? Até quando? E como a organização sabe se o morador confirmou a leitura?\n\nEssa é a jornada que o AlertaCidadão quer melhorar. Já existem canais oficiais de alerta. Nossa proposta é complementar essa estrutura, conectando moradores e administradoras de conjuntos residenciais. Organizamos o caminho entre o local cadastrado, a informação pertinente e a confirmação de leitura. Nossa hipótese é que comunicar com contexto e acompanhar a resposta pode reduzir o trabalho manual da organização.",
+    "words": 87,
+    "wpm_slot": 116.0,
+    "file": "01_problema.mp4",
+    "time": "0:00–0:45"
+  },
+  {
+    "id": "02_solucao",
+    "title": "Solução e proposta de valor",
+    "speaker": "Lucas Alves de Souza",
+    "rm": "RM553956",
+    "start": 45,
+    "seconds": 45,
+    "slides": "3",
+    "role": "Explicar o valor para morador e organização",
+    "cues": [
+      {
+        "second": 0,
+        "label": "Slide 3 · dois públicos",
+        "text": "Para o morador, o AlertaCidadão reúne o aviso, sua abrangência, validade e origem. Para a organização, registra as notificações criadas e as leituras confirmadas."
+      },
+      {
+        "second": 15,
+        "label": "Cadastro e regras",
+        "text": "O endereço pode ser digitado ou preenchido com ajuda de um documento de teste. O cidadão sempre revisa e confirma. O sistema considera a área, as preferências e a validade do aviso."
+      },
+      {
+        "second": 31,
+        "label": "Escopo demonstrado",
+        "text": "O MVP demonstra chuva e calor com cenários sintéticos. Ele já executa esse fluxo completo na central interna. A proposta de negócio é organizar e acompanhar a comunicação, com acesso gratuito para o morador."
+      }
+    ],
+    "text": "Para o morador, o AlertaCidadão reúne o aviso, sua abrangência, validade e origem. Para a organização, registra as notificações criadas e as leituras confirmadas.\n\nO endereço pode ser digitado ou preenchido com ajuda de um documento de teste. O cidadão sempre revisa e confirma. O sistema considera a área, as preferências e a validade do aviso.\n\nO MVP demonstra chuva e calor com cenários sintéticos. Ele já executa esse fluxo completo na central interna. A proposta de negócio é organizar e acompanhar a comunicação, com acesso gratuito para o morador.",
+    "words": 90,
+    "wpm_slot": 120.0,
+    "file": "02_solucao.mp4",
+    "time": "0:45–1:30"
+  },
+  {
+    "id": "03_demo",
+    "title": "Demonstração do MVP",
+    "speaker": "Guilherme Fernandes de Freitas",
+    "rm": "RM554323",
+    "start": 90,
+    "seconds": 90,
+    "slides": "Aplicação · trecho de demonstração",
+    "role": "Narrar as ações reais e o resultado",
+    "cues": [
+      {
+        "second": 0,
+        "label": "00–06 s · início",
+        "text": "Vamos executar a jornada no AlertaCidadão. Todos os dados são sintéticos."
+      },
+      {
+        "second": 6,
+        "label": "06–18 s · extração e revisão",
+        "text": "O PDF de teste preenche os campos. O usuário revisa o endereço e confirma o cadastro."
+      },
+      {
+        "second": 18,
+        "label": "18–31 s · dois locais",
+        "text": "Salvamos dois locais: um na área TESTE-A e outro na TESTE-B. Agora o sistema tem dois endereços para avaliar."
+      },
+      {
+        "second": 31,
+        "label": "31–38 s · chuva para A",
+        "text": "Processamos chuva para A. Só o local correspondente recebe a notificação."
+      },
+      {
+        "second": 38,
+        "label": "38–49 s · detalhe",
+        "text": "A notificação mostra abrangência, validade e origem. Assim, o morador sabe a qual local a informação se refere."
+      },
+      {
+        "second": 49,
+        "label": "49–55 s · confirmação",
+        "text": "Ao confirmar a leitura, essa ação fica registrada no banco."
+      },
+      {
+        "second": 55,
+        "label": "55–64 s · painel",
+        "text": "O painel já mostra uma notificação e uma leitura confirmada. Os indicadores vêm dessa interação."
+      },
+      {
+        "second": 64,
+        "label": "64–72 s · repetição",
+        "text": "Repetimos o mesmo aviso. Nenhuma nova mensagem é criada: o sistema evita duplicidade."
+      },
+      {
+        "second": 72,
+        "label": "72–79 s · área C",
+        "text": "Um aviso da área C também não gera notificações para A ou B."
+      },
+      {
+        "second": 79,
+        "label": "79–90 s · limite do MVP",
+        "text": "Esse fluxo funciona na central interna. WhatsApp, SMS e dados oficiais ao vivo são evoluções previstas, ainda não ativadas."
+      }
+    ],
+    "text": "Vamos executar a jornada no AlertaCidadão. Todos os dados são sintéticos.\n\nO PDF de teste preenche os campos. O usuário revisa o endereço e confirma o cadastro.\n\nSalvamos dois locais: um na área TESTE-A e outro na TESTE-B. Agora o sistema tem dois endereços para avaliar.\n\nProcessamos chuva para A. Só o local correspondente recebe a notificação.\n\nA notificação mostra abrangência, validade e origem. Assim, o morador sabe a qual local a informação se refere.\n\nAo confirmar a leitura, essa ação fica registrada no banco.\n\nO painel já mostra uma notificação e uma leitura confirmada. Os indicadores vêm dessa interação.\n\nRepetimos o mesmo aviso. Nenhuma nova mensagem é criada: o sistema evita duplicidade.\n\nUm aviso da área C também não gera notificações para A ou B.\n\nEsse fluxo funciona na central interna. WhatsApp, SMS e dados oficiais ao vivo são evoluções previstas, ainda não ativadas.",
+    "words": 145,
+    "wpm_slot": 96.7,
+    "file": "03_demo.mp4",
+    "time": "1:30–3:00"
+  },
+  {
+    "id": "04_negocio",
+    "title": "Modelo de negócio e viabilidade",
+    "speaker": "João Pedro Chizzolini de Freitas",
+    "rm": "RM553172",
+    "start": 180,
+    "seconds": 60,
+    "slides": "5 e 6",
+    "role": "Explicar comprador, receita, preço, canal e custos",
+    "cues": [
+      {
+        "second": 0,
+        "label": "Slide 5 · comprador e receita",
+        "text": "O morador usa gratuitamente. Nossa primeira hipótese de comprador é a administradora de conjuntos residenciais. Propomos uma assinatura de novecentos e noventa reais mensais por organização, com até quinhentos cadastros e duas mil mensagens externas na futura oferta comercial."
+      },
+      {
+        "second": 20,
+        "label": "Slide 6 · custos e contribuição",
+        "text": "No cenário-base, assumimos quinhentos reais de custo variável por cliente. Com uma carga hipotética de seis por cento, sobram quatrocentos e trinta reais e sessenta centavos de contribuição."
+      },
+      {
+        "second": 36,
+        "label": "Slide 6 · equilíbrio e sensibilidade",
+        "text": "Para cobrir dezoito mil reais de custos fixos mensais, seriam necessários quarenta e dois clientes. A planilha também mostra como mensagens mais caras pressionam essa conta."
+      },
+      {
+        "second": 49,
+        "label": "Entrada no mercado",
+        "text": "Esses valores são hipóteses, ainda sem vendas ou validação de preço. O canal inicial é prospecção direta, seguida de diagnóstico, demonstração e piloto."
+      }
+    ],
+    "text": "O morador usa gratuitamente. Nossa primeira hipótese de comprador é a administradora de conjuntos residenciais. Propomos uma assinatura de novecentos e noventa reais mensais por organização, com até quinhentos cadastros e duas mil mensagens externas na futura oferta comercial.\n\nNo cenário-base, assumimos quinhentos reais de custo variável por cliente. Com uma carga hipotética de seis por cento, sobram quatrocentos e trinta reais e sessenta centavos de contribuição.\n\nPara cobrir dezoito mil reais de custos fixos mensais, seriam necessários quarenta e dois clientes. A planilha também mostra como mensagens mais caras pressionam essa conta.\n\nEsses valores são hipóteses, ainda sem vendas ou validação de preço. O canal inicial é prospecção direta, seguida de diagnóstico, demonstração e piloto.",
+    "words": 116,
+    "wpm_slot": 116.0,
+    "file": "04_negocio.mp4",
+    "time": "3:00–4:00"
+  },
+  {
+    "id": "05_impacto",
+    "title": "Evidências, métricas e impacto",
+    "speaker": "Henrique Rafael",
+    "rm": "RM553945",
+    "start": 240,
+    "seconds": 30,
+    "slides": "7",
+    "role": "Apresentar evidências e separar métricas de hipóteses",
+    "cues": [
+      {
+        "second": 0,
+        "label": "Slide 7 · evidências",
+        "text": "Os testes automatizados verificam as regras de processamento, o isolamento das sessões e a prevenção de duplicidade. A demonstração mostra o cadastro, a notificação e a confirmação atualizando o painel."
+      },
+      {
+        "second": 16,
+        "label": "Slide 7 · impacto pretendido",
+        "text": "A contribuição pretendida aos ODS onze e treze é apoiar preparação urbana e conscientização climática. Compreensão dos moradores, disposição de pagamento e redução de danos ainda precisam ser avaliadas."
+      }
+    ],
+    "text": "Os testes automatizados verificam as regras de processamento, o isolamento das sessões e a prevenção de duplicidade. A demonstração mostra o cadastro, a notificação e a confirmação atualizando o painel.\n\nA contribuição pretendida aos ODS onze e treze é apoiar preparação urbana e conscientização climática. Compreensão dos moradores, disposição de pagamento e redução de danos ainda precisam ser avaliadas.",
+    "words": 59,
+    "wpm_slot": 118.0,
+    "file": "05_impacto.mp4",
+    "time": "4:00–4:30"
+  },
+  {
+    "id": "06_time",
+    "title": "Equipe e próximo passo",
+    "speaker": "Henrique Rafael",
+    "rm": "RM553945",
+    "start": 270,
+    "seconds": 25,
+    "slides": "8",
+    "role": "Concluir com uma decisão de negócio",
+    "cues": [
+      {
+        "second": 0,
+        "label": "Slide 8 · equipe e piloto",
+        "text": "Nossa equipe transformou a ideia em um MVP demonstrável, com modelo de negócio, indicadores e hipóteses explícitas. O próximo passo é um piloto observado com uma organização e seus moradores."
+      },
+      {
+        "second": 15,
+        "label": "Slide 8 · encerramento",
+        "text": "Vamos medir compreensão, utilidade e compromisso de contratação. Os materiais estão na ficha técnica. AlertaCidadão: informação clara para uma comunidade que acompanha."
+      }
+    ],
+    "text": "Nossa equipe transformou a ideia em um MVP demonstrável, com modelo de negócio, indicadores e hipóteses explícitas. O próximo passo é um piloto observado com uma organização e seus moradores.\n\nVamos medir compreensão, utilidade e compromisso de contratação. Os materiais estão na ficha técnica. AlertaCidadão: informação clara para uma comunidade que acompanha.",
+    "words": 52,
+    "wpm_slot": 124.8,
+    "file": "06_time.mp4",
+    "time": "4:30–4:55"
+  }
+]

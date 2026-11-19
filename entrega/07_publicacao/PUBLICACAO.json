@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Kaio Vinicius Meireles Alves",
+      "rm": "553282"
+    },
+    {
+      "name": "Lucas Alves de Souza",
+      "rm": "553956"
+    },
+    {
+      "name": "Guilherme Fernandes de Freitas",
+      "rm": "554323"
+    },
+    {
+      "name": "João Pedro Chizzolini de Freitas",
+      "rm": "553172"
+    },
+    {
+      "name": "Henrique Rafael",
+      "rm": "553945"
+    }
+  ],
+  "mvp_url": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site",
+  "repository_url": "https://github.com/jpczz/alertacidadao-bi",
+  "video_url": "https://youtu.be/RtqAPawx7h4",
+  "checks": {
+    "public_mvp_tested": true,
+    "repository_public": true,
+    "video_public": null,
+    "all_members_participate": null,
+    "video_duration_seconds": null,
+    "video_url_provided": true,
+    "video_file_received": true,
+    "academic_submission_completed": false
+  },
+  "materials_url": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/entrega",
+  "teleprompter_url": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/gravacao",
+  "pdf_finalizer_url": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/finalizar",
+  "publication_platform": "Sites / Cloudflare Worker + D1",
+  "updated_at": "2026-11-19",
+  "video_status": "gravação fornecida pela equipe; URL inserida no dossiê",
+  "evidence": {
+    "public_http_checks_passed": 36,
+    "public_http_checks_total": 36,
+    "report": "04_evidencias/site_publico_verificado.json",
+    "python_unique_cases": 61,
+    "python_databases_tested": [
+      "SQLite",
+      "PostgreSQL"
+    ],
+    "worker_local_test_cases": 12,
+    "human_validation_participants": 0,
+    "external_messages_sent": 0
+  },
+  "submission_pdf": "Dossie_AlertaCidadao_Para_Submissao.pdf",
+  "video_duracao_segundos_medida": 248.866667,
+  "video_backup": "08_video/AlertaCidadao_Pitch_Final.mp4",
+  "video_decodificacao_completa_verificada": true
+}

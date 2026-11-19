@@ -1,0 +1,86 @@
+{
+  "project": "AlertaCidadão",
+  "document_revision": "3.1",
+  "updated_on": "2026-11-19",
+  "timezone": "America/Sao_Paulo",
+  "published": {
+    "url": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site",
+    "materials": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/entrega",
+    "teleprompter": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/gravacao",
+    "pdf_finalizer": "https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/finalizar",
+    "version": 3,
+    "source_commit": "779402140457cf893da01a09649b123aebd11279"
+  },
+  "repository": {
+    "url": "https://github.com/jpczz/alertacidadao-bi",
+    "python": "raiz",
+    "published_worker": "sites/",
+    "document_distribution": "Documentos completos em entrega/ e PDF final em docs/, com backup MP4 em video/",
+    "commit_antes_video": "6df58b2fa8f37ae9f908d1777b721dcb09e53ae7"
+  },
+  "verification": {
+    "public_http": {
+      "passed": 36,
+      "total": 36,
+      "evidence": "04_evidencias/site_publico_verificado.json"
+    },
+    "python": {
+      "unique_cases": 61,
+      "databases": [
+        "SQLite",
+        "PostgreSQL"
+      ],
+      "note": "mesmos casos repetidos em duas bases; execução anterior documentada"
+    },
+    "worker_local_tests": 12,
+    "browser_ui_review": true,
+    "pdf_finalizer_browser_generation": true,
+    "pdf_finalizer_output_pages": 17,
+    "pdf_finalizer_link_annotation_verified": true,
+    "remote_ci_pass_not_asserted": true
+  },
+  "artifacts": {
+    "dossier_pages": 17,
+    "script_pages": 5,
+    "evidence_report_pages": 3,
+    "publication_guide_pages": 2,
+    "presentation_slides": 11,
+    "silent_video_base_seconds": 295,
+    "silent_video_resolution": "1920x1080",
+    "all_names_and_rms_included": true
+  },
+  "limitations": {
+    "human_validation_participants": 0,
+    "commercial_customers": 0,
+    "real_external_messages": 0,
+    "historical_cp1_results_provided": false
+  },
+  "remaining": {
+    "real_team_recording": false,
+    "video_assembly_and_publication": false,
+    "actual_video_link_in_final_pdf": false,
+    "academic_portal_submission": true
+  },
+  "grade": {
+    "total_rubric_weight": 14,
+    "not_a_guaranteed_score": true
+  },
+  "financial_base_hypotheses": {
+    "monthly_price_brl": 990,
+    "variable_cost_brl": 500,
+    "assumed_revenue_charge_percent": 6,
+    "contribution_brl": 430.6,
+    "fixed_cost_monthly_brl": 18000,
+    "break_even_clients": 42
+  },
+  "final_video": {
+    "url": "https://youtu.be/RtqAPawx7h4",
+    "duration_seconds_measured": 248.866667,
+    "backup": "08_video/AlertaCidadao_Pitch_Final.mp4",
+    "backup_bytes": 5987654,
+    "complete_decode_verified": true,
+    "youtube_access_verified": null,
+    "all_five_participants_verified": null,
+    "note": "Gravação e URL fornecidas pela equipe. O slide final preserva texto da preparação; a documentação informa o estado final."
+  }
+}

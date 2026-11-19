@@ -1,0 +1,211 @@
+{
+  "places": [
+    {
+      "id": "f8a4a440677f4a51bbfd1d6fd464b0e5",
+      "label": "MINHA CASA DE TESTE A",
+      "street": "RUA EXEMPLO A",
+      "number": "120",
+      "neighborhood": "JARDIM EXEMPLO A",
+      "city": "CIDADE EXEMPLO",
+      "state": "SP",
+      "postal_code": "00000-001",
+      "zone": "TESTE-A",
+      "chuva": 1,
+      "calor": 1,
+      "consent": 1,
+      "created_at": "2026-11-17T15:42:05.100+00:00"
+    },
+    {
+      "id": "98808ed04f844e3789097b631ad29a40",
+      "label": "Outro local de teste",
+      "street": "Rua Exemplo B",
+      "number": "120",
+      "neighborhood": "Jardim Exemplo B",
+      "city": "Cidade Exemplo",
+      "state": "SP",
+      "postal_code": "00000-002",
+      "zone": "TESTE-B",
+      "chuva": 1,
+      "calor": 1,
+      "consent": 1,
+      "created_at": "2026-11-17T15:42:11.041+00:00"
+    }
+  ],
+  "notices": [
+    {
+      "id": "8592313e60124d7eb88bc5a9be308321",
+      "code": "CHUVA-C",
+      "version": 1,
+      "created_at": "2026-11-17T15:42:58.877+00:00",
+      "notice": {
+        "code": "CHUVA-C",
+        "version": 1,
+        "kind": "chuva",
+        "title": "Chuva na área de teste C",
+        "severity": "Atenção",
+        "zones": [
+          "TESTE-C"
+        ],
+        "starts_at": "2026-11-17T15:37:58.877+00:00",
+        "ends_at": "2026-11-17T21:42:58.877+00:00",
+        "status": "active",
+        "body": "Cenário sintético para avaliar a comunicação. Não é um alerta real.",
+        "source": "Laboratório AlertaCidadão",
+        "synthetic": true
+      }
+    },
+    {
+      "id": "01d5a71622f8443fb72365fdf506f249",
+      "code": "CHUVA-A",
+      "version": 1,
+      "created_at": "2026-11-17T15:42:17.915+00:00",
+      "notice": {
+        "code": "CHUVA-A",
+        "version": 1,
+        "kind": "chuva",
+        "title": "Chuva intensa na área de teste A",
+        "severity": "Atenção",
+        "zones": [
+          "TESTE-A"
+        ],
+        "starts_at": "2026-11-17T15:37:17.915+00:00",
+        "ends_at": "2026-11-17T21:42:17.915+00:00",
+        "status": "active",
+        "body": "Cenário sintético para avaliar a comunicação. Não é um alerta real.",
+        "source": "Laboratório AlertaCidadão",
+        "synthetic": true
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "04e6303d94dc4347a9698d99fd4dd25e",
+      "place_id": "f8a4a440677f4a51bbfd1d6fd464b0e5",
+      "notice_id": "01d5a71622f8443fb72365fdf506f249",
+      "created_at": "2026-11-17T15:42:17.915+00:00",
+      "read_at": "2026-11-17T15:42:35.864+00:00",
+      "channel": "internal",
+      "place_label": "MINHA CASA DE TESTE A",
+      "zone": "TESTE-A",
+      "notice": {
+        "code": "CHUVA-A",
+        "version": 1,
+        "kind": "chuva",
+        "title": "Chuva intensa na área de teste A",
+        "severity": "Atenção",
+        "zones": [
+          "TESTE-A"
+        ],
+        "starts_at": "2026-11-17T15:37:17.915+00:00",
+        "ends_at": "2026-11-17T21:42:17.915+00:00",
+        "status": "active",
+        "body": "Cenário sintético para avaliar a comunicação. Não é um alerta real.",
+        "source": "Laboratório AlertaCidadão",
+        "synthetic": true
+      }
+    }
+  ],
+  "events": [
+    {
+      "kind": "scenario_processed",
+      "detail": {
+        "scenario": "fora",
+        "created": 0,
+        "evaluated": 2,
+        "reasons": {
+          "fora_da_area": 2
+        }
+      },
+      "created_at": "2026-11-17T15:42:58.877+00:00"
+    },
+    {
+      "kind": "scenario_processed",
+      "detail": {
+        "scenario": "chuva",
+        "created": 0,
+        "evaluated": 2,
+        "reasons": {
+          "duplicado": 1,
+          "fora_da_area": 1
+        }
+      },
+      "created_at": "2026-11-17T15:42:50.951+00:00"
+    },
+    {
+      "kind": "reading_confirmed",
+      "detail": {
+        "notification_id": "04e6303d94dc4347a9698d99fd4dd25e"
+      },
+      "created_at": "2026-11-17T15:42:35.864+00:00"
+    },
+    {
+      "kind": "scenario_processed",
+      "detail": {
+        "scenario": "chuva",
+        "created": 1,
+        "evaluated": 2,
+        "reasons": {
+          "elegivel": 1,
+          "fora_da_area": 1
+        }
+      },
+      "created_at": "2026-11-17T15:42:17.915+00:00"
+    },
+    {
+      "kind": "notification_created",
+      "detail": {
+        "notification_id": "04e6303d94dc4347a9698d99fd4dd25e",
+        "place": "MINHA CASA DE TESTE A",
+        "notice": "CHUVA-A",
+        "version": 1,
+        "channel": "internal"
+      },
+      "created_at": "2026-11-17T15:42:17.916+00:00"
+    },
+    {
+      "kind": "place_confirmed",
+      "detail": {
+        "place_id": "98808ed04f844e3789097b631ad29a40",
+        "label": "Outro local de teste",
+        "zone": "TESTE-B"
+      },
+      "created_at": "2026-11-17T15:42:11.041+00:00"
+    },
+    {
+      "kind": "place_confirmed",
+      "detail": {
+        "place_id": "f8a4a440677f4a51bbfd1d6fd464b0e5",
+        "label": "MINHA CASA DE TESTE A",
+        "zone": "TESTE-A"
+      },
+      "created_at": "2026-11-17T15:42:05.100+00:00"
+    },
+    {
+      "kind": "document_extracted",
+      "detail": {
+        "method": "texto_pdf",
+        "stored": false
+      },
+      "created_at": "2026-11-17T15:41:56.903+00:00"
+    },
+    {
+      "kind": "session_started",
+      "detail": {
+        "synthetic": true
+      },
+      "created_at": "2026-11-17T15:41:52.837+00:00"
+    }
+  ],
+  "metrics": {
+    "places": 2,
+    "notices": 2,
+    "active_notices": 2,
+    "notifications": 1,
+    "confirmed": 1,
+    "unread": 0,
+    "confirmation_rate": 100,
+    "external_deliveries": 0
+  },
+  "mode": "synthetic-demo",
+  "generated_at": "2026-11-17T15:43:16.838+00:00"
+}

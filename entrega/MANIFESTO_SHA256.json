@@ -1,0 +1,344 @@
+{
+  "files": [
+    {
+      "path": "02_documentos/Dossie_AlertaCidadao_BI.docx",
+      "bytes": 465548,
+      "sha256": "099a84b6f2351c60676f112903f620acdb2cb177d9f5f6958e91973c2ce42439"
+    },
+    {
+      "path": "02_documentos/Dossie_AlertaCidadao_BI.md",
+      "bytes": 28945,
+      "sha256": "e58cbf829bf9461bbd1f20ac221d8a34dc6f9809d125e10801e8d70d0b327c87"
+    },
+    {
+      "path": "02_documentos/Dossie_AlertaCidadao_BI.pdf",
+      "bytes": 731485,
+      "sha256": "59c70b3fa570b764ca92a3d57b6c618f05c28491570bb86573d2391b8f4a675e"
+    },
+    {
+      "path": "02_documentos/Perguntas_da_Banca.md",
+      "bytes": 8252,
+      "sha256": "3b4d1e74070de10df592b0583032d4614fde4d9693a5167fe0956d3ade95d41c"
+    },
+    {
+      "path": "02_documentos/Roteiro_Pitch_e_Gravacao.docx",
+      "bytes": 43682,
+      "sha256": "abaf0d2727456ca1de6d1976b7681b212f6dfd112d44f0149a915c90b56478ad"
+    },
+    {
+      "path": "02_documentos/Roteiro_Pitch_e_Gravacao.md",
+      "bytes": 7419,
+      "sha256": "2b9ce6e1bf0455121e034b87c4a9c468bd7c64128207919d01cdbd4d4c2b134b"
+    },
+    {
+      "path": "02_documentos/Roteiro_Pitch_e_Gravacao.pdf",
+      "bytes": 165332,
+      "sha256": "573802023bf4a8781e9268b3ea6032dfa23850ead529e47ff4c2b5125c0e7f3f"
+    },
+    {
+      "path": "03_apresentacao/ADICIONAR_NARRACOES.py",
+      "bytes": 2516,
+      "sha256": "db8894875b222326dbb175234dfee5fc0e07c29180eea521c3fd14c3d6fc41f3"
+    },
+    {
+      "path": "03_apresentacao/KIT_GRAVACAO.json",
+      "bytes": 13070,
+      "sha256": "8ab8a36a0da3935efa66506950d340e478edae88e90c35a0010edb33ccc893de"
+    },
+    {
+      "path": "03_apresentacao/LEIA_VIDEO.md",
+      "bytes": 4705,
+      "sha256": "ccc80a87bfa1b34f50f33e7a61e7c0051bec3be36414c7693fdaad2f8b8d063a"
+    },
+    {
+      "path": "03_apresentacao/Pitch_AlertaCidadao.pdf",
+      "bytes": 1703554,
+      "sha256": "ce4583a7620ad37fd3d17aba142f718d23175af573436fa923ec3a14305c9e31"
+    },
+    {
+      "path": "03_apresentacao/Pitch_AlertaCidadao.pptx",
+      "bytes": 332835,
+      "sha256": "a9e16a18b312bf63509fd450e785ad49fbccea4a4e692c7f069fda6c6bc4f9e9"
+    },
+    {
+      "path": "03_apresentacao/Pitch_Base_Visual_4m55.mp4",
+      "bytes": 4596730,
+      "sha256": "3a785aeb1d264dcf5718bb343311cd3016ff99100715cc0ebc8c39791362c939"
+    },
+    {
+      "path": "03_apresentacao/roteiro_segmentos.json",
+      "bytes": 12104,
+      "sha256": "5bc0022333ab7c2c534400c6831fe113c5bfb114928d8336c2438c4ca8456e7f"
+    },
+    {
+      "path": "04_evidencias/01_inicio_desktop.png",
+      "bytes": 199165,
+      "sha256": "c9848587148d6716de1146f1901fb04b434cce8d1e60e11de4e7d608d6e04a9c"
+    },
+    {
+      "path": "04_evidencias/01_inicio_recorte.png",
+      "bytes": 114212,
+      "sha256": "f8b30f4ca210a47292a2795df680f096ba9ade9ca6e8ed8d0ba0305cb4c80f14"
+    },
+    {
+      "path": "04_evidencias/02_cadastro_desktop.png",
+      "bytes": 182276,
+      "sha256": "8167ee8f7af85fdfc47e82fe45a4bc2fc364fe5a4e9667e992475e976ed85168"
+    },
+    {
+      "path": "04_evidencias/03_notificacao_desktop.png",
+      "bytes": 95643,
+      "sha256": "805ddebb1f784d1b73029afbe67e3c1d0448ef0c715a84d84dd4047bd066fe6b"
+    },
+    {
+      "path": "04_evidencias/04_aviso_detalhado.png",
+      "bytes": 139622,
+      "sha256": "12ef6a3c6cfda27cfffbd09c5c8f56577e284a2ff215f3a68493c238e0640cb7"
+    },
+    {
+      "path": "04_evidencias/05_painel_desktop.png",
+      "bytes": 180194,
+      "sha256": "73c71dccf610473c296b1e7186d784166d6fe66f0d2bd5afd45ce5a410308d3d"
+    },
+    {
+      "path": "04_evidencias/05_painel_recorte.png",
+      "bytes": 147456,
+      "sha256": "f4e440a968063b4319993b957c5f52e901bbe7611c149113a0920a7f5d81083f"
+    },
+    {
+      "path": "04_evidencias/06_visao_geral_desktop.png",
+      "bytes": 162553,
+      "sha256": "2c1781021c86ad39f792335b963c534f89e14fe50e1398e29593cafc0a9462b4"
+    },
+    {
+      "path": "04_evidencias/07_laboratorio_desktop.png",
+      "bytes": 160373,
+      "sha256": "35dd7b984e44c05de34747d9cce4bba20e1037cfbd89a9879f013e14f65ae9a4"
+    },
+    {
+      "path": "04_evidencias/08_cadastro_mobile.png",
+      "bytes": 139373,
+      "sha256": "04d7dcf6103e06c1c520d603bd7c43a8263ecb14303c733b2c7bb4ca0f8fc65d"
+    },
+    {
+      "path": "04_evidencias/09_inicio_mobile.png",
+      "bytes": 177838,
+      "sha256": "6f53388381812ecf245fb2677d3f7a71dba27e6522f91818d1140c9897792a3d"
+    },
+    {
+      "path": "04_evidencias/10_ocr_imagem.png",
+      "bytes": 183158,
+      "sha256": "f9efbbd09ce374d174c038dadfa79e500205459cf4bcb0e2af05f0c4fa85c849"
+    },
+    {
+      "path": "04_evidencias/Demonstracao_Tecnica_90s.mp4",
+      "bytes": 1729841,
+      "sha256": "4ba73ef43b5c7ddb024f7f965d0e6c63fbaa1b92e6e2d5f0befc082acf42a6a6"
+    },
+    {
+      "path": "04_evidencias/Demonstracao_Tecnica_90s.srt",
+      "bytes": 953,
+      "sha256": "e6e90b27bd4de85e296f49d67a489779098f01281643ebe88474988eca017d47"
+    },
+    {
+      "path": "04_evidencias/LEIA_EVIDENCIAS.md",
+      "bytes": 2032,
+      "sha256": "4c94a722c9abce80ae4514a5351ec9606d925d7b610d264b85598318538a7794"
+    },
+    {
+      "path": "04_evidencias/Relatorio_Ensaio_Controlado.pdf",
+      "bytes": 51575,
+      "sha256": "b28e0c3c68c3bfdef72d4a875a7cee8642d4d0ee64cc95427b2500f9fb65e4e8"
+    },
+    {
+      "path": "04_evidencias/controlled_value_journey.json",
+      "bytes": 2719,
+      "sha256": "21fa1eac8fd575ec32ad6b2cb0bfd78dcd3df6f1e728143d73b0ca8ef3b02f4d"
+    },
+    {
+      "path": "04_evidencias/evidence-worker-api.txt",
+      "bytes": 1075,
+      "sha256": "41af4c18d2b009bb1cab975706a80bbf52c6a9d4d834914fb2d79bb0d3304fd1"
+    },
+    {
+      "path": "04_evidencias/jornada_browser_estado.json",
+      "bytes": 5670,
+      "sha256": "12bb9e20f4758724ef07e5ee84947b352a10ea6d758c7081f5263fc9c8fa55fa"
+    },
+    {
+      "path": "04_evidencias/resumo_testes.json",
+      "bytes": 274,
+      "sha256": "d9177f7941f299cde9280f19cfae0875e401ce7a7b4dbf0e9dd4b514da1b00ed"
+    },
+    {
+      "path": "04_evidencias/site_publico_verificado.json",
+      "bytes": 9777,
+      "sha256": "f61f5e99c8b1039e832bc74479e9c37d8878d59465b67db43b0b2ec979b53e28"
+    },
+    {
+      "path": "04_evidencias/site_publico_verificado.txt",
+      "bytes": 1901,
+      "sha256": "6c626681d4b41203fed25d8029587bce985235fd33e1777d44b4d394313a7b1f"
+    },
+    {
+      "path": "04_evidencias/testes_console.txt",
+      "bytes": 99,
+      "sha256": "83e779138d157c58c1f63190aee43959acc512a6ebb36c9c36b174cd8a12544b"
+    },
+    {
+      "path": "04_evidencias/testes_junit.xml",
+      "bytes": 5975,
+      "sha256": "5947572e3e6013e0991b037cab935c6182776700305cbc19c6cfe21ea152a6a4"
+    },
+    {
+      "path": "04_evidencias/tests_postgresql.xml",
+      "bytes": 5975,
+      "sha256": "35c98120da70509ea3767798bd7294da69c24129a01d35737141a2ccdc12bb3e"
+    },
+    {
+      "path": "04_evidencias/tests_sqlite.xml",
+      "bytes": 5975,
+      "sha256": "6b3ba8cdf008acd58335bf125107ac9d6f73e255522b6e8860bc36110d575337"
+    },
+    {
+      "path": "04_evidencias/verificacao_browser.json",
+      "bytes": 1850,
+      "sha256": "5c65091a72c06fd9f31b487c97f572d0ae50a57ae5f7cc492539070ec7f46f47"
+    },
+    {
+      "path": "04_evidencias/verificacao_http_local.json",
+      "bytes": 737,
+      "sha256": "393638f40a9e72e2ca5ff2db1c3d1b1856342d2fb6ea61f1f102aee45feaa118"
+    },
+    {
+      "path": "04_evidencias/verificacao_utilitarios.json",
+      "bytes": 388,
+      "sha256": "70848f9f23ba43971594b33273d4a1339815953a3d3824beab373471e1b5c76e"
+    },
+    {
+      "path": "04_evidencias/verify_value_journey.py",
+      "bytes": 3507,
+      "sha256": "7762439a1f0a2c8cb1f3dd274f90336455aa3e4c1df3ef1b1fb99c1fe349f99c"
+    },
+    {
+      "path": "04_evidencias/worker-controlled-journey.json",
+      "bytes": 2016,
+      "sha256": "3534cadce7500e01baf59ef8399db47e86bcd5e3bfb08b703c433492810a5e2e"
+    },
+    {
+      "path": "05_modelo_financeiro/Modelo_Financeiro_AlertaCidadao.xlsx",
+      "bytes": 21733,
+      "sha256": "0e6994c8c13f369170ff788802e63a8141524d752b4831a58b27e35bb934f04c"
+    },
+    {
+      "path": "05_modelo_financeiro/auditoria_calculos.json",
+      "bytes": 854,
+      "sha256": "5fd3c4d135469465ce49e54d66674c764f7f37638b7c7f635db42017f6bcdf5e"
+    },
+    {
+      "path": "05_modelo_financeiro/verificacao_planilha.json",
+      "bytes": 135,
+      "sha256": "d078a628135f408281242dd982783b0fb9785e818c1a5d2e6933539ed5f31201"
+    },
+    {
+      "path": "06_validacao/Protocolo_de_Validacao.docx",
+      "bytes": 39872,
+      "sha256": "fee07af8b26122cad7da706eec781b9da18d94d90701405a4ea170b36a806743"
+    },
+    {
+      "path": "06_validacao/Protocolo_de_Validacao.md",
+      "bytes": 3514,
+      "sha256": "89b4cdcd0c15f10b7fc0db07c669fcd2ba3e0e0fb465420f7f08dcc78e272f2c"
+    },
+    {
+      "path": "06_validacao/Protocolo_de_Validacao.pdf",
+      "bytes": 51186,
+      "sha256": "bf580a93c5a456d66e6989cddb74388ff07c5f365455c6f32cddd413247a5edd"
+    },
+    {
+      "path": "06_validacao/analisar_validacao.py",
+      "bytes": 2242,
+      "sha256": "bcd484d97cf06ef2641909eaf9f7395dc3aed7d5c11b4ecef8ebf004de33986b"
+    },
+    {
+      "path": "06_validacao/entrevista_comprador.csv",
+      "bytes": 177,
+      "sha256": "2e99b2ab7b24186ae3e91c88b5323b7a361e64bbfc228adf2cfb09a5533d152e"
+    },
+    {
+      "path": "06_validacao/hipoteses.json",
+      "bytes": 562,
+      "sha256": "f659fed99c6d0669fa3e3487d25f6e8a9e96f94cc8a47d4353e6345fda25d266"
+    },
+    {
+      "path": "06_validacao/sessoes_cidadaos.csv",
+      "bytes": 239,
+      "sha256": "1b6331fab1069dd48cbbeeac603155f37ed4d92ed82f5c672ed7c3d282a85f6b"
+    },
+    {
+      "path": "06_validacao/status_coleta.json",
+      "bytes": 139,
+      "sha256": "22f8fbdeb76115f61fbf4d1d273fe66ad7628121b0d5e7c5ff371c7faaaf29a2"
+    },
+    {
+      "path": "07_publicacao/Guia_Publicacao.docx",
+      "bytes": 40030,
+      "sha256": "1ae312bc0389b478be38472f5c0e4292564f034132d58398390fec3224df929c"
+    },
+    {
+      "path": "07_publicacao/Guia_Publicacao.pdf",
+      "bytes": 68718,
+      "sha256": "809acead78b93e223b7c123d37799305615b92a3f12686cf14297aced8c08af2"
+    },
+    {
+      "path": "07_publicacao/MENSAGERIA.md",
+      "bytes": 2174,
+      "sha256": "2a5369dd3b12259f7f0119fa97177f5f1e5e13e7b60d69390806062c02e531f1"
+    },
+    {
+      "path": "07_publicacao/PUBLICACAO.json",
+      "bytes": 1929,
+      "sha256": "fb6f35a4bdde803a80693ae24659eb4d9f701751d1ecc71048f00ca9a621c522"
+    },
+    {
+      "path": "07_publicacao/PUBLICAR.md",
+      "bytes": 2119,
+      "sha256": "07b7f914ce1bf4563cb8b70e15a4eba980241a7a553d4142504c13cd5cfbd907"
+    },
+    {
+      "path": "08_video/AlertaCidadao_Pitch_Final.mp4",
+      "bytes": 5987654,
+      "sha256": "ff8ed12b1fa34f8a09fd889bc6a65ed3671931fe2bb7c6ee2070ec8bf24218d1"
+    },
+    {
+      "path": "08_video/README.md",
+      "bytes": 920,
+      "sha256": "d71cf29e50c08d6b8b07bd845da8476d90bab44b87b1f2e173af579ed435f49a"
+    },
+    {
+      "path": "08_video/video_auditoria.json",
+      "bytes": 1839,
+      "sha256": "fdd02b56803a2a4bf409dc5875f4a7243ed6d196c955dbaa44d952eab8d4e79a"
+    },
+    {
+      "path": "COMECE_AQUI.html",
+      "bytes": 11542,
+      "sha256": "15b85bd791f9c8434c078fa1a50afe20a1e56c6639a6813b878a66a207c87c8d"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.md",
+      "bytes": 5343,
+      "sha256": "879f48bb9ff2c83a6e437c3d2a40e63c86a15402cb2e4773c5e68772a6b70d3b"
+    },
+    {
+      "path": "QUALIDADE_DA_ENTREGA.json",
+      "bytes": 2925,
+      "sha256": "1749f021507e9bd3ea9515914ca03f1b135348c88f2dac649076f37748e326b2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5343,
+      "sha256": "879f48bb9ff2c83a6e437c3d2a40e63c86a15402cb2e4773c5e68772a6b70d3b"
+    }
+  ]
+}
