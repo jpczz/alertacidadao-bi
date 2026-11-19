@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_PATH: /data/alerta.db
+      COOKIE_SECURE: "0"
+    volumes:
+      - alerta-data:/data
+    restart: unless-stopped
+volumes:
+  alerta-data:
