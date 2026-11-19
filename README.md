@@ -8,10 +8,10 @@
 | Cidadão / território | Moradores; execução com Cidade Exemplo/SP, TESTE-A/B/C e CEPs fictícios |
 | Problema | Organizar e acompanhar comunicações pertinentes à localidade |
 | Proposta de valor | Contexto para o morador; rastreabilidade para a organização |
-| Arquitetura | FastAPI + HTML/CSS/JS + PostgreSQL na hospedagem (SQLite local) + regras de elegibilidade + trilha de eventos |
+| Arquitetura | Site público: JavaScript Worker + Cloudflare D1 + HTML/CSS/JS. Implementação Python adicional: FastAPI + SQLite/PostgreSQL. Ambas aplicam regras de elegibilidade e trilha de eventos |
 | Dados | Cenários sintéticos; nenhum feed oficial conectado |
-| IA | Tesseract para OCR de imagem; sem modelo climático preditivo ou GenAI |
-| URL do MVP | Aguardando publicação pelo grupo |
+| Modelos de IA | Site: sem modelo de IA; extração textual de PDF com unpdf. Python: Tesseract para OCR de imagem. Sem previsão climática ou GenAI |
+| URL do MVP | https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site |
 | Repositório | https://github.com/jpczz/alertacidadao-bi |
 | Indicadores | Locais, notificações internas, confirmações e trilha de eventos |
 | ODS | 11 e 13; contribuição pretendida, impacto ainda não medido |
@@ -28,7 +28,25 @@
 | João Pedro Chizzolini de Freitas | 553172 |
 | Henrique Rafael | 553945 |
 
-## Início rápido
+## Materiais publicados
+
+- [MVP funcional](https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site)
+- [Central de entrega e PDFs](https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/entrega)
+- [Teleprompter com falas dos cinco integrantes](https://alertacidadao-bi-jpczz.est-dio-like-0113.chatgpt.site/gravacao)
+- [Código do site público](sites/README.md)
+- Os PDFs de apresentação e entrega são distribuídos pela central de materiais e pelo pacote final; não são duplicados neste repositório.
+- Vídeo-pitch: aguardando gravação da equipe. O roteiro tem 4min55s planejados; a duração final deve ser medida.
+
+## Duas implementações identificadas
+
+| Implementação | Local do código | Persistência | Extração |
+|---|---|---|---|
+| Publicada no endereço acima | sites/ | Cloudflare D1, sessões isoladas de 24h | PDF sintético com camada de texto, até 2 MB e 2 páginas |
+| Python executável localmente e compatível com Docker | Raiz: app/, tests/ | SQLite local ou PostgreSQL via DATABASE_URL | PDF textual e OCR de PNG/JPG com Tesseract |
+
+A tentativa de banco gratuito no Render exigiu cartão e não foi usada na publicação. A demonstração está hospedada em Sites com D1. Os relatórios distinguem testes da implementação Python, testes locais do Worker e verificação do endereço público.
+
+## Início rápido da versão Python
 Python 3.12+ recomendado. Windows: execute `INICIAR_WINDOWS.bat`. Linux/macOS: `sh iniciar.sh`.
 
 Manual:
@@ -52,7 +70,7 @@ O arquivo `.env.example` documenta variáveis; não é carregada automaticamente
 6. Explore calor, aviso expirado, futuro, cancelado, nova versão e falha de fonte. Alterar preferências afeta os próximos processamentos.
 7. Exporte JSON/CSV. O reset apaga somente os dados da sessão atual.
 
-## OCR
+## Extração e OCR na versão Python
 PDF: até 2 páginas com camada textual; imagens em PDF sem texto não são convertidas automaticamente. Imagem: PNG/JPG, até 2 MB e 8 megapixels, com Tesseract e idioma `eng` no PATH. O gabarito usa campos sintéticos em letras latinas; isso não valida extração de contas reais de concessionárias.
 
 O Dockerfile inclui Tesseract. Em instalação local sem esse programa, use o PDF ou entrada manual. O arquivo enviado é processado e descartado; não é persistido.
@@ -64,10 +82,14 @@ python -m pytest -q --junitxml=test-results.xml
 ```
 Em 19/11/2026, os mesmos 61 casos passaram com SQLite e com PostgreSQL 16.2 real, usando Tesseract e as versões exatas de requirements.txt. Sem ele, o teste de OCR pode ser ignorado explicitamente. 12 casos de domínio, 36 de API, 7 de documentos e 6 de contrato de mensageria. Os testes de mensageria usam HTTP simulado; nenhum SMS ou WhatsApp foi enviado.
 
-`tests/browser_smoke.py` executa uma jornada em uma URL por navegação normal. Requer Playwright e Chromium instalados (`python -m playwright install chromium`). As capturas anteriores constam no pacote. A rodada atual também executou 12 verificações HTTP da jornada sintética; os registros estão em `evidencias/`.
+`tests/browser_smoke.py` é o roteiro de navegador da implementação Python. A evidência local anterior está no pacote e em `evidencias/controlled_value_journey.json` (12 verificações). A versão Worker tem 12 testes locais próprios em `sites/tests/worker-api.test.mjs`.
+
+A verificação pública reproduzível está em `scripts/verificar_site_publico.py`, com relatório `evidencias/site_publico_verificado.json`. Execute `python scripts/verificar_site_publico.py --help` antes de repetir; o teste cria somente dados sintéticos em sessões próprias.
+
+Os resultados locais aprovados não significam CI remoto aprovado. Na auditoria de 19/11, a execução GitHub Actions 44609914142 terminou sem iniciar os steps dos dois jobs; não foi possível determinar a causa pelo log disponível.
 
 ## API e dados
-Esquema OpenAPI em `/api/openapi.json`; saúde em `/api/health`. Não há Swagger externo/CDN. Endpoints principais: `/api/session`, `/api/state`, `/api/places`, `/api/documents/extract`, `/api/scenarios/run`, `/api/notifications/{id}/confirm`, `/api/export` e `/api/reset`. Operações mutáveis exigem cookie da sessão e cabeçalho `X-CSRF-Token` recebido ao iniciar a sessão.
+Na implementação Python, esquema OpenAPI em `/api/openapi.json`. Nas duas implementações, saúde em `/api/health`. Não há Swagger externo/CDN. Endpoints principais: `/api/session`, `/api/state`, `/api/places`, `/api/documents/extract`, `/api/scenarios/run`, `/api/notifications/{id}/confirm`, `/api/export` e `/api/reset`. Operações mutáveis exigem cookie da sessão e cabeçalho `X-CSRF-Token` recebido ao iniciar a sessão.
 
 Persistência: `sessions` (expiração), `places` (local/preferências), `notices` (código/versão/payload), `notifications` (canal/leitura) e `events` (trilha). Unicidade impede notificação duplicada para o mesmo local e versão. Toda consulta de usuário é limitada à sessão.
 
@@ -76,8 +98,8 @@ Sessões opacas, HttpOnly/SameSite, CSRF, consultas parametrizadas, limite de up
 
 As visões morador/operador compartilham a sessão de teste; **não constituem RBAC comercial**. Sem dados pessoais de produção, sem autenticação de empresas e sem geocodificação. A oferta comercial de 500 cadastros ainda não é capacidade certificada.
 
-## Implantar
-O `Dockerfile` inclui Tesseract e inicia a API com um worker na porta `PORT`. `docker compose up --build` usa SQLite com volume local. Na hospedagem, configure `DATABASE_URL` com a conexão PostgreSQL e `COOKIE_SECURE=1`. Não inclua a conexão no repositório. A construção será verificada no primeiro deploy. O plano gratuito do Render Postgres tem prazo de 30 dias e o serviço web pode ficar inativo até novo acesso; consultar https://render.com/docs/free. A demonstração acadêmica usa apenas dados sintéticos.
+## Hospedagem da versão Python
+O `Dockerfile` inclui Tesseract e inicia a API com um worker na porta `PORT`. `docker compose up --build` usa SQLite com volume local. Na hospedagem, configure `DATABASE_URL` com a conexão PostgreSQL e `COOKIE_SECURE=1`. Não inclua a conexão no repositório. A construção Docker não foi validada por deploy nesta entrega. Nenhum recurso Render foi necessário para o site publicado. Para contratar hospedagem adicional, consultar as condições atuais do provedor. A demonstração acadêmica usa apenas dados sintéticos.
 
 ## Mensageria opcional
 O site nunca dispara mensagens externas. O adaptador de teste fica em `scripts/notificar_teste.py` e inicia em ensaio seco. Exige credenciais por variável de ambiente, número optante e confirmação explícita de custo. `queued` não significa entregue. Detalhes no guia de mensageria do pacote.

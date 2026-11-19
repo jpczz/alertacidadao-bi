@@ -1,0 +1,20 @@
+✔ complete controlled A/B journey: 12 expected outcomes, no external sends (26.837155ms)
+✔ CSRF, origin and anonymous requests are rejected (2.13739ms)
+✔ requires synthetic data, coherent zone, plain text and explicit consent (3.643105ms)
+✔ duplicate places and maximum of ten places are enforced (8.410718ms)
+✔ invalid temporal scenarios and failed source never create notifications (3.649625ms)
+✔ preferences and revoked consent control subsequent notifications (3.284283ms)
+✔ versions and readings are idempotent and counters use latest notice (7.368684ms)
+✔ new place only receives current notice version (4.477386ms)
+✔ cross-session access, deletion cascade and reset remain isolated (10.19867ms)
+✔ exports omit secrets and escape spreadsheet formulas (3.167476ms)
+✔ request body limit protects even routes with no JSON payload (25.108038ms)
+✔ real sample PDFs are parsed against ground truth; images fail clearly (102.231601ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 303.963702

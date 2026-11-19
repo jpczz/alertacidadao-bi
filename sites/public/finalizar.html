@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AlertaCidadão | Finalizar PDF da entrega</title>
+  <meta name="description" content="Inclua o link do vídeo da equipe no dossiê do AlertaCidadão e baixe o PDF para submissão.">
+  <link rel="icon" href="/static/icon.svg">
+  <link rel="stylesheet" href="/static/entrega.css">
+  <style>
+    .hero{padding-bottom:32px}.hero h1{font-size:clamp(38px,6vw,62px)}
+    .finalizer{max-width:790px;background:white;border:1px solid var(--line);border-radius:14px;padding:32px}
+    fieldset{border:0;margin:0;padding:0;min-width:0}.field{margin:0 0 24px}.field label{display:block;font-weight:700;margin-bottom:8px}
+    input[type=url],input[type=number]{width:100%;font:inherit;color:var(--ink);border:1px solid #8ca7a7;border-radius:7px;padding:12px;background:white}
+    input[type=number]{max-width:220px}.help{font-size:14px;color:var(--muted);margin:8px 0 0}
+    .confirmation{display:flex;align-items:flex-start;gap:12px;margin:8px 0 24px}.confirmation input{width:20px;height:20px;flex:none;margin-top:3px;accent-color:var(--teal)}
+    .confirmation label{font-size:16px}.button{cursor:pointer}.button:disabled{cursor:wait;opacity:.65}
+    #status{min-height:28px;margin:24px 0 0;font-size:16px}#status[data-kind=error]{color:#9c2f29;font-weight:700}
+    .result{margin-top:18px}.result[hidden]{display:none}.after{max-width:790px;margin-top:32px}.after p{color:var(--muted)}
+    .privacy-note{font-size:15px;margin:0 0 28px;color:var(--muted)}
+    @media(max-width:600px){.finalizer{padding:24px}.hero{padding-bottom:24px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/"><img src="/static/icon.svg" alt=""><span>AlertaCidadão<small>FIAP · CitizenTech 2026.2</small></span></a>
+    <a class="button secondary" href="/entrega">Materiais da entrega</a>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">ÚLTIMA ETAPA · APÓS GRAVAR E PUBLICAR O VÍDEO</p>
+      <h1>Inclua o vídeo<br>no dossiê.</h1>
+      <p class="lead">Cole o link do pitch gravado pela equipe e baixe o PDF com o acesso ao vídeo. O limite da apresentação é de 5 minutos.</p>
+    </section>
+    <section class="finalizer" aria-labelledby="form-title">
+      <h2 id="form-title">Preparar PDF para submissão</h2>
+      <p class="privacy-note">A inserção acontece neste navegador. O link informado não é enviado ao site nem armazenado por esta ferramenta. Ela acrescenta o acesso ao vídeo já gravado; não grava nem publica o pitch.</p>
+      <form id="finalizer-form" novalidate>
+        <fieldset id="finalizer-fields" disabled>
+          <div class="field">
+            <label for="video-url">Link HTTPS público do vídeo</label>
+            <input id="video-url" type="url" inputmode="url" autocomplete="off" spellcheck="false" maxlength="4096" placeholder="https://…" aria-describedby="url-help" required>
+            <p id="url-help" class="help">Use um link que o professor consiga abrir. O grupo deve conferir o acesso ao vídeo em uma janela anônima, sem estar conectado à conta que publicou.</p>
+          </div>
+          <div class="field">
+            <label for="video-duration">Duração final, em segundos</label>
+            <input id="video-duration" type="number" inputmode="numeric" min="1" max="300" step="1" placeholder="295" aria-describedby="duration-help" required>
+            <p id="duration-help" class="help">De 1 a 300 segundos. Exemplo: 4min55s corresponde a 295 segundos. Informe a duração do arquivo final.</p>
+          </div>
+          <div class="confirmation">
+            <input id="team-confirmed" type="checkbox" required>
+            <label for="team-confirmed">Confirmo que os cinco integrantes participam do vídeo. Esta informação é uma declaração da equipe.</label>
+          </div>
+          <button id="generate-pdf" class="button" type="submit">Gerar PDF para entrega</button>
+        </fieldset>
+      </form>
+      <p id="status" role="status" aria-live="polite" aria-atomic="true">Carregando a ferramenta…</p>
+      <div id="download-result" class="result" hidden>
+        <a id="download-pdf" class="button secondary" download="Dossie_AlertaCidadao_Para_Submissao.pdf">Baixar PDF novamente</a>
+      </div>
+      <noscript><p>Ative o JavaScript para inserir o link no PDF neste navegador. O dossiê original também está disponível na página de materiais.</p></noscript>
+    </section>
+    <section class="after">
+      <h3>Antes de enviar</h3>
+      <p>Abra o PDF baixado e teste o link do vídeo. Depois, envie o arquivo no local indicado pela disciplina. A disponibilidade do vídeo e as informações de duração e participação precisam ser conferidas pelo grupo.</p>
+      <div class="actions"><a class="button secondary" href="/gravacao">Roteiro e teleprompter</a><a class="button secondary" href="/entrega">Voltar aos materiais</a></div>
+    </section>
+  </main>
+  <footer>AlertaCidadão · Business Intelligence &amp; Startup Development · CitizenTech 2026.2</footer>
+  <script type="module" src="/static/finalizar.js"></script>
+</body>
+</html>

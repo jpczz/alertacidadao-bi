@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-11-19T20:38:25.641Z",
+  "method": "Worker Request/Response handlers backed by real SQLite via a D1-shaped adapter. No public deployment or human participants implied.",
+  "before": {
+    "places": 2,
+    "notices": 1,
+    "active_notices": 1,
+    "notifications": 1,
+    "confirmed": 0,
+    "unread": 1,
+    "confirmation_rate": 0,
+    "external_deliveries": 0
+  },
+  "after": {
+    "places": 2,
+    "notices": 1,
+    "active_notices": 1,
+    "notifications": 1,
+    "confirmed": 1,
+    "unread": 0,
+    "confirmation_rate": 100,
+    "external_deliveries": 0
+  },
+  "checks": [
+    {
+      "check": "two_synthetic_places",
+      "expected": 2,
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "check": "rain_A_only",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "B_excluded",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "before_confirmation",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "after_confirmation",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "confirmation_rate",
+      "expected": 100,
+      "observed": 100,
+      "passed": true
+    },
+    {
+      "check": "repeat_deduplicated",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "C_excludes_A_and_B",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "one_notification_total",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check": "external_sends",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "other_session_isolated",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "export_consistency",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    }
+  ],
+  "human_participants": 0,
+  "external_messages_sent": 0
+}

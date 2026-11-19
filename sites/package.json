@@ -1,0 +1,19 @@
+{
+  "name": "alertacidadao-bi-publico",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:ci": "npm ci --no-audit --no-fund",
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "pdf-lib": "1.17.1",
+    "unpdf": "2.2.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

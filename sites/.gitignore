@@ -1,0 +1,11 @@
+dist/
+node_modules/
+.outputs/
+outputs/
+.sites-runtime/
+.vinext/
+.wrangler/
+.env*
+.dev.vars*
+worker/assets.generated.js
+public/static/finalizar.js
